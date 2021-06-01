@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Update the game rating</title>
+<link rel="stylesheet" type="text/css" href="css\create.css">
+<script type="text/javascript" src="js/js4.js"></script>
+<script type="text/javascript" src="js/sweetalert2.js"></script>
+</head>
+<body>
+	<div class="container">
+		<fieldset>
+			<legend>update game rating</legend>
+			<form method="POST" action="#">
+				<div id="errorMessage"></div>
+				<ul class="ulform">
+					<li>
+						<span>Game name</span>
+						<span id="errPname"></span>
+						<input id="pname" name="pname" />
+					</li>
+					<li>
+						<span>Game category</span>
+						<span id="errCategory"></span>
+						<select id="category" name="category">
+							<option value="-1">Select Category</option>
+							<option value="1">FPS</option>
+							<option value="2">RTS</option>
+							<option value="3">MOBA</option>
+							<option value="4">RPG</option>
+							<option value="5">Other</option>
+						</select>
+					</li>
+					<li>
+						<span>Game Rating</span>
+						<span id="errRating"></span>
+						<input id="Rating" name="Rating"/>
+					</li>
+					<li>
+						<span>Game Company</span>
+						<span id="errCompany"></span>
+						<input id="Company" name="Company"/>
+					</li>
+
+					<li>
+						<span>Release Time</span>
+						<span id="errRelase"></span>
+						<input id="Release" name="Relase"/>
+					</li>
+					<li>
+						<span>Image URL</span>
+						<span id="errURL"></span>
+						<input id="URL" name="URL"/>
+					</li>
+
+					<li>
+						<span>Comments</span>
+						<span id="errComments"></span>
+						<textarea
+							id="Comments" name="Comments"></textarea>
+					</li>
+					<li style="text-align: center;">
+						<button type="button" class="btn-button" onclick="createGame()">Submit</button>
+					</li>
+				</ul>
+			</form>
+		</fieldset>
+	</div>
+
+</body>
+</html>
